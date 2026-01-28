@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>👑 RAJA MOD 8F 👑</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Trebuchet MS', sans-serif;
+}
+
+body {
+  background: radial-gradient(circle at top, #0f0f0f, #000);
+  color: #fff;
+  overflow-x: hidden;
+}
+
+/* GLOW */
+.glow {
+  text-shadow: 0 0 10px #00ff99, 0 0 25px #00ff99;
+}
+
+/* PAGE */
+.page {
+  display: none;
+  min-height: 100vh;
+  padding: 30px;
+  animation: fade 0.8s ease;
+}
+
+.page.active {
+  display: block;
+}
+
+@keyframes fade {
+  from {opacity: 0; transform: scale(0.95);}
+  to {opacity: 1; transform: scale(1);}
+}
+
+/* IMAGE */
+.img-box {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.img-box img {
+  width: 220px;
+  border-radius: 15px;
+  box-shadow: 0 0 30px #00ff99;
+}
+
+/* INPUT */
+input {
+  width: 80%;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  margin-top: 15px;
+  outline: none;
+}
+
+/* BUTTON */
+button {
+  background: linear-gradient(45deg, #00ff99, #00cc77);
+  border: none;
+  padding: 14px 25px;
+  margin-top: 15px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 0 20px #00ff99;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.08);
+}
+
+/* DOWNLOAD BUTTON */
+.download {
+  display: block;
+  margin: 12px auto;
+  width: 80%;
+  background: linear-gradient(45deg, #ff0055, #ff6600);
+  box-shadow: 0 0 25px #ff0055;
+}
+
+/* STATUS */
+.status {
+  margin-top: 10px;
+  color: #00ff00;
+  font-weight: bold;
+}
+
+/* COUNTER */
+.counter {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #00ff99;
+}
+
+/* AUDIO */
+audio {
+  display: none;
+}
+</style>
+</head>
+
+<body>
+
+<!-- 🎵 MUSIC -->
+<audio autoplay loop>
+  <source src="lagu.mp3" type="audio/mpeg">
+</audio>
+
+<!-- 🔐 PAGE 1 -->
+<div class="page active" id="page1">
+  <h1 class="glow">👑 RAJA MOD 8F 👑</h1>
+  <p class="status">● STATUS: ONLINE</p>
+
+  <div class="img-box">
+    <img src="img1.png">
+  </div>
+
+  <input type="text" placeholder="Masukkan nama...">
+  <br>
+  <button onclick="login()">🔐 VERIFY DAN LOGIN</button>
+</div>
+
+<!-- 🎮 PAGE 2 -->
+<div class="page" id="page2">
+  <h1 class="glow">Danish 8F</h1>
+  <p class="status">● STATUS: ONLINE</p>
+  <p class="status">● BERHASIL DOWNLOAD</p>
+
+  <div class="counter">345.892 DOWNLOAD</div>
+
+  <div class="img-box">
+    <img src="img2.png">
+  </div>
+
+  <!-- GANTI LINK MEDIAFIRE -->
+  <a href="https://www.mediafire.com/file/wmoy2p5wu2ru161/beach-buggy-racing-2024.10.12-mod-%255BMSR%255D.apk/file?dkey=2zjr9i81l7f&r=298" target="_blank"><button class="download">🏖 BEACH BUGGY RACING MOD</button></a>
+  <a href="https://www.mediafire.com/file/097thq47jvyw4mp/Hill_Climb_Racing_Mod_Apk_V1.66.0_.apk/file?dkey=2padn9wy2id&r=1287" target="_blank"><button class="download">🚗 HILL CLIMB RACING MOD</button></a>
+  <a href="https://download2390.mediafire.com/zivun6b2jqvg5NbqHJcvPz9GsnZoImtXtlAIe65ZlTIAstWMlcYbEbXoa2Zi1ug3HaKGSuaVNW2ry5VpDo7QdiCXOUi2A1HHv2876CDW8vEHbdh51faRV3GTYZexlU6vFABoghHUSF9NqQ8fuIkZbF0SjFiVCU6Tmh6Y8NwSaw/z4i5u0803zssw56/NarutoSenki.zip" target="_blank"><button class="download">🏐 THE SPIKE CROSS MOD</button></a>
+  <a href="https://sub4unlock.io/LchFI" target="_blank"><button class="download">⚽️ FC MOBILE MOD</button></a>
+  <a href="https://www.mediafire.com/file/xory4mpwxgukl9i/Stumble-Guys-v0.94-MOD-MENU-GMA-%28Getmodsapk.com%29.apk/file?dkey=u8vmwfl29ah&r=1248" target="_blank"><button class="download">👤 STUMBLE GUYS MOD</button></a>
+</div>
+
+<script>
+function login() {
+  document.getElementById("page1").classList.remove("active");
+  document.getElementById("page2").classList.add("active");
+}
+</script>
+
+</body>
+</html>
