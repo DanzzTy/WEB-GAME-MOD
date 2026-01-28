@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>👑 RAJA MOD 8F 👑</title>
+
+<style>
+*{box-sizing:border-box;font-family:Arial}
+body{
+  margin:0;
+  background:radial-gradient(circle at top,#00ff9933,#000),
+             linear-gradient(135deg,#02130d,#000);
+  color:#baffea;
+}
+.page{display:none;min-height:100vh;align-items:center;justify-content:center}
+.page.active{display:flex}
+.card{
+  width:350px;
+  background:linear-gradient(180deg,#0e3f2d,#071c15);
+  border-radius:22px;
+  padding:25px;
+  box-shadow:0 0 40px #00ffb366;
+  text-align:center;
+}
+.avatar{
+  width:90px;height:90px;border-radius:50%;
+  object-fit:cover;box-shadow:0 0 15px #00ffb3;
+}
+.title{font-size:20px;font-weight:bold;margin:15px 0 6px}
+.badge{
+  display:inline-block;
+  padding:6px 12px;
+  border-radius:20px;
+  background:#0b5;
+  color:#001;
+  font-size:12px;
+  margin:4px;
+}
+input{
+  width:100%;
+  padding:13px;
+  border-radius:14px;
+  border:none;
+  outline:none;
+  margin-top:10px;
+  background:#001f16;
+  color:#0f9;
+}
+.btn{
+  width:100%;
+  padding:14px;
+  margin-top:14px;
+  border-radius:16px;
+  border:none;
+  cursor:pointer;
+  background:linear-gradient(90deg,#00ffb3,#00c97a);
+  color:#002;
+  font-weight:bold;
+  box-shadow:0 0 20px #00ffb3aa;
+}
+.error{color:#ff5a5a;font-size:13px;margin-top:10px;display:none}
+
+/* halaman 2 */
+.header{
+  display:flex;align-items:center;gap:10px;margin-bottom:15px
+}
+.header img{width:45px;height:45px;border-radius:10px}
+.menu{margin-left:auto;font-size:22px}
+.info{display:flex;gap:8px;justify-content:center;margin-bottom:10px}
+.info span{
+  background:#063;padding:6px 10px;border-radius:20px;font-size:12px
+}
+.big{
+  background:linear-gradient(180deg,#0f4,#063);
+  color:#002;padding:18px;border-radius:18px;margin:15px 0
+}
+.big h1{margin:0;font-size:30px}
+.desc{font-size:13px;margin:10px 0}
+.note{font-size:12px;opacity:.85;margin-top:8px}
+.footer{font-size:12px;margin-top:15px;opacity:.7}
+</style>
+</head>
+
+<body>
+
+<!-- ================= HALAMAN 1 ================= -->
+<div class="page active" id="page1">
+  <div class="card">
+
+    <img src="img1.jpg" class="avatar">
+
+    <div class="title">👑 RAJA MOD 8F 👑</div>
+
+    <div>
+      <span class="badge">• STATUS: ONLINE</span>
+      <span class="badge">ONLY 8F</span>
+    </div>
+
+    <input id="nama" placeholder="Masukkan nama...">
+
+    <button class="btn" onclick="login()">🔐 VERIFY & MASUK</button>
+
+    <div class="error" id="error">
+      NAMA ANDA TIDAK TERDAFTAR DI LAKI LAKI 8F!
+    </div>
+
+    <div class="footer">MAS DANZZ @2026</div>
+  </div>
+</div>
+
+<!-- ================= HALAMAN 2 ================= -->
+<div class="page" id="page2">
+  <div class="card">
+
+    <div class="header">
+      <img src="img2.jpg">
+      <b>DANISH 8F</b>
+      <div class="menu">☰</div>
+    </div>
+
+    <div class="info">
+      <span>• STATUS: ONLINE</span>
+      <span>VISIT: 146.542</span>
+    </div>
+
+    <h3>WEBSITE GAME MOD FREE</h3>
+
+    <div class="big">
+      <div>BERHASIL DOWNLOAD</div>
+      <h1>31.311</h1>
+    </div>
+
+    <div class="desc">
+      Khusus cah lanang kelas 8F 😈🔥
+    </div>
+
+    <!-- ===== 5 LINK INPUT ===== -->
+    <input placeholder="🔗 Link 1">
+    <input placeholder="🔗 Link 2">
+    <input placeholder="🔗 Link 3">
+    <input placeholder="🔗 Link 4">
+    <input placeholder="🔗 Link 5">
+
+    <button class="btn">🔐 VERIFY & MASUK</button>
+    <button class="btn">⬇ DOWNLOAD</button>
+
+    <div class="note">
+      📌 Isi semua link di atas<br>
+      📌 Klik VERIFY & MASUK<br>
+      📌 Jika sudah, tombol download bisa digunakan
+    </div>
+
+  </div>
+</div>
+
+<script>
+const allowed = [
+ "DANISH","ADIB","FALE","RAFA","FAISHAL",
+ "ASHRAF","KALINGGA","DHANI","DZAKA","FADHIL"
+];
+
+function login(){
+  const nama = document.getElementById("nama").value.trim().toUpperCase();
+  const error = document.getElementById("error");
+  if(allowed.includes(nama)){
+    page1.classList.remove("active");
+    page2.classList.add("active");
+  }else{
+    error.style.display="block";
+  }
+}
+</script>
+
+</body>
+  </html>
